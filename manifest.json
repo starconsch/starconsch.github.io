@@ -1,0 +1,140 @@
+{
+  "_version": "1.58.0",
+  "sap.app": {
+    "id": "ch.starcons.itools",
+    "type": "application",
+    "i18n": "i18n/i18n.properties",
+    "applicationVersion": {
+      "version": "0.0.1"
+    },
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}",
+    "resources": "resources.json",
+    "sourceTemplate": {
+      "id": "@sap/generator-fiori:basic",
+      "version": "1.11.3",
+      "toolsId": "e24708a7-4fee-48a4-a99d-006595dd74a1"
+    }
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "icons": {
+      "icon": "",
+      "favIcon": "",
+      "phone": "",
+      "phone@2": "",
+      "tablet": "",
+      "tablet@2": ""
+    },
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
+  "sap.ui5": {
+    "flexEnabled": true,
+    "dependencies": {
+      "minUI5Version": "1.119.2",
+      "libs": {
+        "sap.m": {},
+        "sap.ui.core": {},
+        "sap.f": {},
+        "sap.ui.unified": {}
+      }
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "ch.starcons.itools.i18n.i18n"
+        }
+      },
+      "": {
+          "type": "sap.ui.model.json.JSONModel"
+      }
+    },
+    "resources": {
+      "css": [
+        {
+          "uri": "css/style.css"
+        }
+      ]
+    },
+    "routing": {
+      "config": {
+        "routerClass": "sap.f.routing.Router",
+        "viewType": "XML",
+        "async": true,
+        "viewPath": "ch.starcons.itools.view",
+        "controlAggregation": "beginColumnPages",
+        "controlId": "flexibleColumnLayout",
+        "clearControlAggregation": false,
+        "bypassed": {
+            "target": [
+                "error"
+            ]
+        }
+      },
+      "routes": [
+        {
+          "name": "Home",
+          "pattern": "",
+          "target": [
+            "home"
+          ]
+        },
+        {
+          "name": "Launchpad",
+          "pattern": "launchpad/layout/{layout}",
+          "target": [
+            "launchpad"
+          ]
+        },
+        {
+          "name": "Report",
+          "pattern": "report/layout/{layout}",
+          "target": [
+            "report"
+          ]
+        }
+      ],
+      "targets": {
+        "home": {
+          "viewType": "XML",
+          "viewId": "viewHome",
+          "viewName": "Home",
+          "transition": "show"
+        },
+        "launchpad": {
+          "viewType": "XML",
+          "viewId": "viewLaunchpad",
+          "viewName": "Launchpad",
+          "transition": "show"
+        },
+        "report": {
+          "viewType": "XML",
+          "viewId": "viewReport",
+          "viewName": "Report",
+          "transition": "show"
+        },
+        "error": {
+          "viewType": "XML",
+          "viewId": "viewError",
+          "viewName": "Error",
+          "transition": "show"
+        }
+      }
+    },
+    "rootView": {
+      "viewName": "ch.starcons.itools.view.App",
+      "type": "XML",
+      "async": true,
+      "id": "viewApp"
+    }
+  }
+}

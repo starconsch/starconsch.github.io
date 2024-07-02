@@ -1,0 +1,31 @@
+{
+    "messageFlowPropertyMapping": {
+        "system": "system",
+        "ComponentType": "adapterType",
+        "direction": "direction",
+        "TransportProtocol": "transportProtocol",
+        "MessageProtocol": "messageProtocol",
+        "Description": "description",
+        "host": "server",
+        "hosts": "server",
+        "server": "server",
+        "urlPath": "server",
+        "address": "server",
+        "Address": "server",
+        "endpointUrl": "server",
+        "Address_inbound": "server",
+        "getProfileURL": "server",
+        "receipientURL": "server",
+        "httpAddressWithoutQuery": "server",
+        "ldapAddress": "server",
+        "firstUriPart": "server",
+        "port": "port",
+        "path": "path",
+        "credential_name": "user",
+        "credentialName": "user",
+        "username": "user",
+        "user": "user",
+        "ldapCredentialName": "user",
+        "openConnectorAlias": "user"
+    }
+}

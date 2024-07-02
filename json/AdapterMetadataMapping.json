@@ -1,0 +1,255 @@
+{
+    "adapterMetadataMapping": [
+        {
+            "type": "BC",
+            "version": "7.50",
+            "mapping": {
+                "URL": "server",
+                "LogonUser": "user"
+           }       
+        },        
+        {
+            "type": "CIDX",
+            "version": "7.50",
+            "mapping": {
+                "httpDestination": "server",
+                "logonUser": "user"
+            }       
+        },
+        {
+            "type": "File",
+            "version": "7.50",
+            "mapping": {
+                "file.adapterStatus": "status",
+                "file.sourceDir": "path",
+                "file.targetDir": "path",
+                "ftp.host": "server",
+                "ftp.port": "port",
+                "ftp.targetDir": "path",
+                "ftp.sourceDir": "path",
+                "ftp.user": "user"
+            }     
+        },
+        {
+            "type": "HTTP",
+            "version": "7.50",
+            "mapping": {
+                "host": "server",
+                "port": "port",
+                "path": "path",
+                "httpDestination": "server",
+                "logonUser": "user",
+                "logonClient": "client"
+            }       
+        },
+        {
+            "type": "HTTP_AAE",
+            "version": "7.50",
+            "mapping": {
+                "host": "server",
+                "port": "port",
+                "path": "path",
+                "logonUser": "user",
+                "HttpAdapterStatus": "status"
+            }       
+        },
+        {
+            "type": "IDoc",
+            "version": "7.50",
+            "mapping": {
+                "rfcDestination": "server",
+                "port": "port"
+            }       
+        },
+        {
+            "type": "IDoc_AAE",
+            "version": "7.50",
+            "mapping": {
+                "UserName": "user",
+                "ServerName": "server",
+                "PortNumber": "port",
+                "IDocAdapterStatus": "status"
+            }       
+        },
+        {
+            "type": "JDBC",
+            "version": "7.50",
+            "mapping": {
+                "adapterStatus": "status",
+                "connectionURL": "server",
+                "dbuser": "user"
+            }       
+        },
+        {
+            "type": "JMS",
+            "version": "7.50",
+            "mapping": {
+                "JMSAdapterStatus": "status",
+                "JMSQueueFactoryUser": "user",
+                "DCJMSUser": "user",
+                "SonicPort": "port",
+                "WSMQPort": "port",
+                "SonicServer": "server",
+                "WSMQServer": "server",
+                "WASServer": "server",
+                "JNDIProviderURL": "server"
+            }       
+        },
+        {
+            "type": "Mail",
+            "version": "7.50",
+            "mapping": {
+                "adapterStatus": "status",
+                "OMail.TargetURL": "server",
+                "OMail.User": "user",
+                "OMail.OAuthUser": "user",
+                "OMail.ClientId": "user",
+                "IMail.TargetURL": "server",
+                "IMail.OAuthUser": "user",
+                "IMail.ClientId": "user",
+                "IMail.User": "user"
+            }       
+        },
+        {
+            "type": "Marketplace",
+            "version": "7.50",
+            "mapping": {
+                "URL": "server",
+                "LogonUser": "user"
+            }       
+        },
+        {
+            "type": "OData",
+            "version": "7.50",
+            "mapping": {
+                "oData.destination": "server",
+                "oData.Address": "server",
+                "oData.User": "user",
+                "adapterStatus": "status"
+            }       
+        },
+        {
+            "type": "REST",
+            "version": "7.50",
+            "mapping": {
+                "URLPattern": "server",
+                "path": "path",
+                "HttpUser": "user",
+                "nativeFlowUrlUser": "user",
+                "poll.oauth.clientID_ROPCG": "user",
+                "poll.oauth.username_ROPCG": "user",
+                "poll.oauth.rousername_ROPCG": "user",
+                "poll.oauth.clientId_CCG": "user",
+                "poll.oauth.clientId_JWTCG": "user",
+                "poll.oauth.clientID_SFCCG": "user",
+                "hmac.User": "user",
+                "poll.request.url": "server"
+            }       
+        },
+        {
+            "type": "RFC",
+            "version": "7.50",
+            "mapping": {
+                "applicationServer": "server",
+                "messageServer": "server",
+                "messageServerService": "port",
+                "logonUser": "user",
+                "adapterStatus": "status",
+                "RfcDestination": "server",
+                "logonClient": "client"
+            }       
+        },
+        {
+            "type": "RNIF",
+            "version": "7.50",
+            "mapping": {
+                "httpDestination": "server",
+                "logonUser": "user"
+            }       
+        },
+        {
+            "type": "RNIF11",
+            "version": "7.50",
+            "mapping": {
+                "httpDestination": "server",
+                "logonUser": "user"
+            }       
+        },
+        {
+            "type": "SFSF",
+            "version": "7.50",
+            "mapping": {
+                "destination": "server",
+                "endpointURL": "server",
+                "username": "user",
+                "adapterStatus": "status",
+                "REST.endpointurl": "server",
+                "REST.OAuth.deploy.clientid": "user"
+
+            }       
+        },
+        {
+            "type": "SFTP",
+            "version": "7.50",
+            "mapping": {
+                "serverhost": "server",
+                "serverport": "port",
+                "userName": "user",
+                "fileDirectory": "path",
+                "adapterStatus": "status",
+                "filePath": "path",
+                "privateKeyEntry": "certificate"
+            }       
+        },
+        {
+            "type": "SOAP",
+            "version": "7.50",
+            "mapping": {
+                "adapterStatus": "status",
+                "XMBWS.TargetURL": "server",
+                "XMBWS.User": "user",
+                "transport.url": "server",
+                "user": "user",
+                "logonUser": "user",
+                "httpDestination": "server",
+                "logonClient": "client"
+            }       
+        },
+        {
+            "type": "WS",
+            "version": "7.50",
+            "mapping": {
+                "AuthenticationMethod.Basic.Username": "user",
+                "MetaDataAccess.URLPort": "port",
+                "AuthenticationMethod.ABAPServiceUser.Username": "user",
+                "URLHost": "server",
+                "HTTPSPort": "port",
+                "URLPort": "port",
+                "URLPath": "path",
+                "URLClient": "client"
+            }       
+        },
+        {
+            "type": "WS_AAE",
+            "version": "7.50",
+            "mapping": {
+                "XMBWS.TargetURL": "server",
+                "AuthenticationMethod.Basic.Username": "user",
+                "customEndpoint": "server"
+            }       
+        },
+        {
+            "type": "XI",
+            "version": "7.50",
+            "mapping": {
+                "host": "server",
+                "port": "port",
+                "path": "path",
+                "httpDestination": "server",
+                "logonUser": "user",
+                "logonClient": "client"
+            }       
+        }
+
+    ]
+}
