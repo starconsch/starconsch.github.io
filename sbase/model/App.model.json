@@ -1,7 +1,8 @@
 {
     "app": {
         "busy": false,
-        "uistate": null
+        "uistate": null,
+        "version": ""
     },
     "file": {
         "filename": ""
