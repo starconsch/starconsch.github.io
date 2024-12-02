@@ -1,1 +1,0 @@
-{"version":3,"file":"sw.js","names":["self","addEventListener","oEvent"],"sources":["sw-dbg.js"],"mappings":"AAAAA,KAAKC,iBAAiB,QAAS,SAASC,GACxC","ignoreList":[]}
