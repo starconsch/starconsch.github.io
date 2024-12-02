@@ -1,0 +1,139 @@
+{
+    "_version": "1.65.0",
+    "sap.app": {
+        "id": "ch.starcons.sbase",
+        "type": "application",
+        "i18n": "i18n/i18n.properties",
+        "applicationVersion": {
+            "version": "0.0.1"
+        },
+        "title": "{{appTitle}}",
+        "description": "{{appDescription}}",
+        "resources": "resources.json",
+        "sourceTemplate": {
+            "id": "@sap/generator-fiori:basic",
+            "version": "1.15.5",
+            "toolsId": "edcde286-ca6b-4938-84ba-325a4fbe3663"
+        }
+    },
+    "sap.ui": {
+        "technology": "UI5",
+        "icons": {
+            "icon": "",
+            "favIcon": "",
+            "phone": "",
+            "phone@2": "",
+            "tablet": "",
+            "tablet@2": ""
+        },
+        "deviceTypes": {
+            "desktop": true,
+            "tablet": true,
+            "phone": true
+        }
+    },
+    "sap.ui5": {
+        "flexEnabled": true,
+        "dependencies": {
+            "minUI5Version": "1.130.0",
+            "libs": {
+                "sap.m": {},
+                "sap.ui.core": {},
+                "sap.f": {}
+            }
+        },
+        "contentDensities": {
+            "compact": true,
+            "cozy": true
+        },
+        "models": {
+            "i18n": {
+                "type": "sap.ui.model.resource.ResourceModel",
+                "settings": {
+                    "bundleName": "ch.starcons.sbase.i18n.i18n"
+                }
+            },
+            "": {
+                "type": "sap.ui.model.json.JSONModel"
+            }
+        },
+        "resources": {
+            "css": [
+                {
+                    "uri": "css/style.css"
+                }
+            ]
+        },
+        "routing": {
+            "config": {
+                "routerClass": "sap.f.routing.Router",
+                "controlAggregation": "beginColumnPages",
+                "controlId": "flexibleColumnLayout",
+                "type": "View",
+                "viewType": "XML",
+                "path": "ch.starcons.sbase.view",
+                "async": true,
+                "viewPath": "ch.starcons.sbase.view",
+                "bypassed": {
+                    "target": [
+                        "error"
+                    ]
+                }
+            },
+            "routes": [
+                {
+                    "name": "Start",
+                    "pattern": "",
+                    "target": [
+                        "start"
+                    ]
+                },
+                {
+                    "name": "File",
+                    "pattern": "file/layout/{layout}",
+                    "target": [
+                        "file"
+                    ]
+                },
+                {
+                    "name": "Database",
+                    "pattern": "database/layout/{layout}",
+                    "target": [
+                        "database"
+                    ]
+                }
+            ],
+            "targets": {
+                "start": {
+                    "viewType": "XML",
+                    "viewId": "viewStart",
+                    "viewName": "Start",
+                    "transition": "show"
+                },
+                "file": {
+                    "viewType": "XML",
+                    "viewId": "viewFile",
+                    "viewName": "File",
+                    "transition": "show"
+                },
+                "database": {
+                    "viewType": "XML",
+                    "viewId": "viewDatabase",
+                    "viewName": "Database",
+                    "transition": "show"
+                },
+                "error": {
+                    "viewType": "XML",
+                    "viewId": "viewError",
+                    "viewName": "Error",
+                    "transition": "show"
+                }
+            }
+        },
+        "rootView": {
+            "viewName": "ch.starcons.sbase.view.App",
+            "type": "XML",
+            "id": "viewApp"
+        }
+    }
+}

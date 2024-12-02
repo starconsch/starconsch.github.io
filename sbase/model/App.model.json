@@ -1,0 +1,45 @@
+{
+    "app": {
+        "busy": false,
+        "uistate": null
+    },
+    "file": {
+        "filename": ""
+    },
+    "database": {
+        "editor": "sql",
+        "sql": "",
+        "javaScript": "",
+        "errorMessage": "",
+        "successMessage": "",
+        "sqlResultTables": [],
+        "javaScriptFiles": []
+    },
+    "appData": {},
+    "appDataSchema": {
+        "version": "1",
+        "database": {
+            "sql": "",
+            "javaScript": "",
+            "variants": [{
+                "uuid": "",
+                "name": "",
+                "sql": "",
+                "javaScript": "",
+                "default": false,
+                "timestamp": ""
+            }],
+            "lastSQL": [{
+                "name": "",
+                "sql": "",
+                "timestamp": ""
+            }]
+        }
+    },
+    "appDataSchemaMapping": [{
+        "version": "1",
+        "path": "",
+        "oldFieldName": "",
+        "newFieldName": ""
+    }]
+}
