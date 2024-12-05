@@ -98,10 +98,26 @@
                     ]
                 },
                 {
-                    "name": "Database",
-                    "pattern": "database/layout/{layout}",
+                    "name": "DatabaseEditor",
+                    "pattern": "databaseEditor/layout/{layout}",
                     "target": [
-                        "database"
+                        "databaseEditor"
+                    ]
+                },
+                {
+                    "name": "DatabaseOutput",
+                    "pattern": "databaseOutput/layout/{layout}",
+                    "target": [
+                        "databaseEditor",
+                        "databaseOutput"
+                    ]
+                },                {
+                    "name": "DatabaseVariant",
+                    "pattern": "databaseVariant/layout/{layout}",
+                    "target": [
+                        "databaseEditor",
+                        "databaseVariant",
+                        "databaseOutput"
                     ]
                 }
             ],
@@ -110,19 +126,38 @@
                     "viewType": "XML",
                     "viewId": "viewStart",
                     "viewName": "Start",
-                    "transition": "show"
+                    "transition": "show",
+                    "viewLevel": 1
                 },
                 "file": {
                     "viewType": "XML",
                     "viewId": "viewFile",
                     "viewName": "File",
-                    "transition": "show"
+                    "transition": "show",
+                    "viewLevel": 1
                 },
-                "database": {
+                "databaseEditor": {
                     "viewType": "XML",
-                    "viewId": "viewDatabase",
-                    "viewName": "Database",
-                    "transition": "show"
+                    "viewId": "viewDatabaseEditor",
+                    "viewName": "DatabaseEditor",
+                    "transition": "show",
+                    "viewLevel": 1
+                },
+                "databaseOutput": {
+                    "viewType": "XML",
+                    "viewId": "viewDatabaseOutput",
+                    "viewName": "DatabaseOutput",
+                    "transition": "show",
+                    "viewLevel": 2,
+                    "controlAggregation": "midColumnPages"
+                },
+                "databaseVariant": {
+                    "viewType": "XML",
+                    "viewId": "viewDatabaseVariant",
+                    "viewName": "DatabaseVariant",
+                    "transition": "show",
+                    "viewLevel": 3,
+                    "controlAggregation": "endColumnPages"
                 },
                 "error": {
                     "viewType": "XML",
