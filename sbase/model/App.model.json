@@ -19,6 +19,7 @@
     },
     "databaseOutput": {
         "height": 0,
+        "growingMaxLines": 0,
         "sqlOutputExportTables": []
     },
     "databaseVariant": {},
