@@ -15,14 +15,17 @@
         "successMessage": "",
         "sqlOutputs": [],
         "javaScriptOutput": "",
-        "isVariantOpen": false
+        "isVariantOpen": false,
+        "lastSavedSQLVariant": "",
+        "lastSavedJavaScriptVariant": ""
     },
     "databaseOutput": {
         "height": 0,
         "growingMaxLines": 0,
         "sqlOutputExportTables": []
     },
-    "databaseVariant": {},
+    "databaseVariant": {
+    },
     "appData": {},
     "appDataSchema": {
         "version": "1",
