@@ -24,7 +24,7 @@
     "display": "standalone",
     "file_handlers": [
         {
-            "action": "/apps/sbase/",
+            "action": "/sbase/index.html",
             "accept": {
                 "application/json": [
                     ".sbase"
