@@ -5,7 +5,9 @@
         "version": ""
     },
     "file": {
-        "filename": ""
+        "busy": false,
+        "filename": "",
+        "encryptionPassword": ""
     },
     "databaseEditor": {
         "type": "sql",
