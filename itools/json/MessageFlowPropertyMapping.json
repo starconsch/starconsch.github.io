@@ -1,5 +1,6 @@
 {
     "messageFlowPropertyMapping": {
+        "Name": "channel",
         "system": "system",
         "ComponentType": "adapterType",
         "direction": "direction",

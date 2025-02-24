@@ -5,7 +5,7 @@
     "type": "application",
     "i18n": "i18n/i18n.properties",
     "applicationVersion": {
-      "version": "0.0.1"
+      "version": "2.0.0"
     },
     "title": "{{appTitle}}",
     "description": "{{appDescription}}",
@@ -96,10 +96,17 @@
           ]
         },
         {
-          "name": "Report",
-          "pattern": "report/layout/{layout}",
+          "name": "CIReport",
+          "pattern": "ciReport/layout/{layout}",
           "target": [
-            "report"
+            "ciReport"
+          ]
+        },
+        {
+          "name": "PIReport",
+          "pattern": "piReport/layout/{layout}",
+          "target": [
+            "piReport"
           ]
         }
       ],
@@ -116,10 +123,16 @@
           "viewName": "Launchpad",
           "transition": "show"
         },
-        "report": {
+        "ciReport": {
           "viewType": "XML",
-          "viewId": "viewReport",
-          "viewName": "Report",
+          "viewId": "viewCIReport",
+          "viewName": "CIReport",
+          "transition": "show"
+        },
+        "piReport": {
+          "viewType": "XML",
+          "viewId": "viewPIReport",
+          "viewName": "PIReport",
           "transition": "show"
         },
         "error": {

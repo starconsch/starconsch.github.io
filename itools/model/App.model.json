@@ -1,6 +1,14 @@
 {
     "app": {
         "busy": false,
-        "uistate": null
+        "uistate": null,
+        "version": ""
+    },
+    "ciReport": {
+        "messages": [],
+        "success": 0,
+        "information": 0,
+        "warning": 0,
+        "error": 0
     }
 }
