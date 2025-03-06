@@ -1,0 +1,125 @@
+{
+    "_version": "1.65.0",
+    "sap.app": {
+        "id": "ch.starcons.pfiles",
+        "type": "application",
+        "i18n": "i18n/i18n.properties",
+        "applicationVersion": {
+            "version": "1.0.0"
+        },
+        "title": "{{appTitle}}",
+        "description": "{{appDescription}}",
+        "resources": "resources.json",
+        "sourceTemplate": {
+            "id": "@sap/generator-fiori:basic",
+            "version": "1.16.5",
+            "toolsId": "81221b00-accd-43e1-9551-3bccf13de590"
+        }
+    },
+    "sap.ui": {
+        "technology": "UI5",
+        "icons": {
+            "icon": "",
+            "favIcon": "",
+            "phone": "",
+            "phone@2": "",
+            "tablet": "",
+            "tablet@2": ""
+        },
+        "deviceTypes": {
+            "desktop": true,
+            "tablet": true,
+            "phone": true
+        }
+    },
+    "sap.ui5": {
+        "flexEnabled": true,
+        "dependencies": {
+            "minUI5Version": "1.133.0",
+            "libs": {
+                "sap.m": {},
+                "sap.ui.core": {},
+                "sap.f": {}
+            }
+        },
+        "contentDensities": {
+            "compact": true,
+            "cozy": true
+        },
+        "models": {
+            "i18n": {
+                "type": "sap.ui.model.resource.ResourceModel",
+                "settings": {
+                    "bundleName": "ch.starcons.pfiles.i18n.i18n"
+                }
+            },
+            "": {
+                "type": "sap.ui.model.json.JSONModel"
+            }
+        },
+        "resources": {
+            "css": [
+                {
+                    "uri": "css/style.css"
+                }
+            ]
+        },
+        "routing": {
+          "config": {
+            "routerClass": "sap.f.routing.Router",
+            "viewType": "XML",
+            "async": true,
+            "viewPath": "ch.starcons.pfiles.view",
+            "controlAggregation": "beginColumnPages",
+            "controlId": "flexibleColumnLayout",
+            "clearControlAggregation": false,
+            "bypassed": {
+                "target": [
+                    "error"
+                ]
+            }
+          },
+          "routes": [
+            {
+              "name": "Home",
+              "pattern": "",
+              "target": [
+                "home"
+              ]
+            },
+            {
+              "name": "Files",
+              "pattern": "files/layout/{layout}",
+              "target": [
+                "files"
+              ]
+            }
+          ],
+          "targets": {
+            "home": {
+              "viewType": "XML",
+              "viewId": "viewHome",
+              "viewName": "Home",
+              "transition": "show"
+            },
+            "files": {
+              "viewType": "XML",
+              "viewId": "viewFiles",
+              "viewName": "Files",
+              "transition": "show"
+            },
+            "error": {
+              "viewType": "XML",
+              "viewId": "viewError",
+              "viewName": "Error",
+              "transition": "show"
+            }
+          }
+        },
+        "rootView": {
+            "viewName": "ch.starcons.pfiles.view.App",
+            "type": "XML",
+            "id": "viewApp"
+        }
+    }
+}
